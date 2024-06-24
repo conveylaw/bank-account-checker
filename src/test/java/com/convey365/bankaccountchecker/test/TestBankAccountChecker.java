@@ -1,10 +1,9 @@
-package com.redmonkeysoftware.bank.account.checker.test;
+package com.convey365.bankaccountchecker.test;
 
-import com.redmonkeysoftware.bank.account.checker.model.AccountDetails;
-import com.redmonkeysoftware.bank.account.checker.model.AccountValidationResult;
-import com.redmonkeysoftware.bank.account.checker.service.AccountSortCodeCheckerService;
-import org.junit.Assert;
-import org.junit.Test;
+import com.convey365.bankaccountchecker.model.AccountDetails;
+import com.convey365.bankaccountchecker.model.AccountValidationResult;
+import com.convey365.bankaccountchecker.service.AccountSortCodeCheckerService;
+import org.junit.jupiter.api.Assertions;
 
 public class TestBankAccountChecker {
 
@@ -22,6 +21,6 @@ public class TestBankAccountChecker {
 
     protected void runTest(AccountSortCodeCheckerService service, String sortCode, String account, int expectedResult) {
         AccountValidationResult result = service.validateBankAccount(new AccountDetails().withAccountDetails(sortCode, account));
-        Assert.assertEquals(result.getResultCode(), expectedResult);
+        Assertions.assertEquals(result.getResultCode(), expectedResult);
     }
 }

@@ -1,4 +1,4 @@
-package com.redmonkeysoftware.bank.account.checker.model;
+package com.convey365.bankaccountchecker.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;

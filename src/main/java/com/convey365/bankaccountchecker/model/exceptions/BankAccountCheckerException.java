@@ -1,4 +1,4 @@
-package com.redmonkeysoftware.bank.account.checker.model.exceptions;
+package com.convey365.bankaccountchecker.model.exceptions;
 
 public abstract class BankAccountCheckerException extends RuntimeException {
 

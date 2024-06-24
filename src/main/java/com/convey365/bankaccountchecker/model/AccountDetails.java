@@ -1,4 +1,4 @@
-package com.redmonkeysoftware.bank.account.checker.model;
+package com.convey365.bankaccountchecker.model;
 
 import java.io.Serializable;
 import java.util.Objects;
